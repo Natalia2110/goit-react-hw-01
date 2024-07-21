@@ -1,0 +1,28 @@
+.friend-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.friend-img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.friend-name,
+.friend-status {
+  font-family: inherit, sans-serif;
+  font-weight: 400;
+}
+.friend-name {
+  font-size: 32px;
+  color: black;
+}
+.status {
+  font-size: 20px;
+}
+.online {
+  color: rgb(13, 112, 13);
+}
+.offline {
+  color: rgb(186, 28, 28);
+}

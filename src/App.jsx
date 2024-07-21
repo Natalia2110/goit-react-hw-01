@@ -1,15 +1,12 @@
-// import { useState } from 'react'
-
-// import './components/App.css'
-
 import userData from "./userData.json";
-import Profile from "./components/Profile";
+import Profile from "./components/Profile/Profile";
 import friends from "./friends.json";
-import FriendList from "./components/FriendList";
+import FriendList from "./components/FrendList/FriendList";
+import css from "./App.module.css";
 
 export default function App() {
   return (
-    <div>
+    <div className={css.container}>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -17,13 +14,7 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList
-        friends={friends}
-        // key={friends.id}
-        // avatar={friends.avatar}
-        // name={friends.name}
-        // isOnline={friends.isOnline}
-      />
+      <FriendList friends={friends} />
     </div>
   );
 }
